@@ -1,0 +1,7 @@
+.mobile-nav__icon--container {
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-nav__icon {
+  padding: 29px 29px;
+}

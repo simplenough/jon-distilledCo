@@ -1,0 +1,23 @@
+.hero__wrapper {
+  margin: 0 14px;
+}
+
+.hero__logo--typeface {
+  display: block;
+
+  width: 250px;
+  height: 154px;
+  margin: auto;
+  margin-top: -30px;
+}
+
+.hero__image {
+  width: 100%;
+  padding: 0;
+}
+
+.hero__content--container {
+  width: 316px;
+  margin: auto;
+  margin-top: 20px;
+}

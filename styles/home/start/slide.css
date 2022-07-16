@@ -1,0 +1,151 @@
+/*
+  TODO Change image and word postioning, other viewports are breaking.
+*/
+
+/*
+***************************************************
+* General 
+***************************************************
+*/
+section.start {
+  position: relative;
+}
+.start .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fff;
+}
+.start .slide h1 {
+  font-size: 128px;
+}
+.start .slide img {
+  width: 300px;
+  height: 450px;
+}
+
+/*
+***************************************************
+* Slide Logo 
+***************************************************
+*/
+.start .slide.logo {
+  z-index: 1300;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: slide-up 1.5s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.6s;
+}
+.start .slide.logo img {
+  width: 150px;
+  height: 150px;
+
+  animation: grow 1.5s ease;
+  animation-fill-mode: forwards;
+}
+
+/*
+***************************************************
+* Slide One 
+***************************************************
+*/
+.start .slide.one {
+  z-index: 1200;
+  animation: fade 800ms ease;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+.start .slide.one h1 {
+  padding-top: 54px;
+  padding-left: 27px;
+}
+.start .slide.one img {
+  margin-left: 84px;
+}
+
+/*
+***************************************************
+* Slide Two 
+***************************************************
+*/
+.start .slide.two {
+  z-index: 1100;
+  animation: fade 800ms ease;
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+}
+.start .slide.two h1 {
+  position: absolute;
+  right: 36px;
+  top: 15%;
+}
+.start .slide.two img {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*
+***************************************************
+* Slide Three
+***************************************************
+*/
+.start .slide.three {
+  z-index: 1000;
+
+  animation: slide-up 1300ms ease;
+  animation-fill-mode: forwards;
+  animation-delay: 5.5s;
+}
+.start .slide.three h1 {
+  position: absolute;
+  right: 36px;
+  bottom: 10%;
+}
+.start .slide.three img {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*
+***************************************************
+* Animations
+***************************************************
+*/
+@keyframes grow {
+  to {
+    width: 200px;
+    height: 200px;
+  }
+}
+@keyframes slide-up {
+  to {
+    top: -150vh;
+    display: none;
+  }
+}
+@keyframes fade {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
