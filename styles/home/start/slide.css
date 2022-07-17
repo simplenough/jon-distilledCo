@@ -54,6 +54,8 @@ section.start figure h1 {
 ***************************************************
 */
 .start__slide--one {
+  position: relative;
+
   z-index: 1200;
   animation: fade 800ms ease;
   animation-fill-mode: forwards;
@@ -64,7 +66,8 @@ section.start figure h1 {
   padding-left: 27px;
 }
 .start__slide--one img {
-  margin-left: 84px;
+  position: absolute;
+  right: 0;
   width: 300px;
   height: 450px;
 }
