@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  display: block;
+
   overflow: hidden;
 
   height: calc(100vh - 71px);
@@ -10,12 +10,12 @@
   margin: 0 14px;
 
   position: absolute;
-  bottom: -100%;
+  top: 100%;
 
-  animation: move-up 2s ease;
+  animation: move-up 2s;
   animation-fill-mode: forwards;
   /*
-  ! Wait for slide 3 to finish
+  ! Wait for slide 3 to start
   */
   animation-delay: 5.5s;
 }
@@ -47,7 +47,6 @@
 */
 @keyframes move-up {
   to {
-    bottom: 0;
-    position: relative;
+    top: 0;
   }
 }

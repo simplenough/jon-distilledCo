@@ -107,7 +107,7 @@ section.start figure h1 {
 .start__slide--three {
   z-index: 1000;
 
-  animation: slide-up 2s ease;
+  animation: slide-up 2.5s ease;
   animation-fill-mode: forwards;
   animation-delay: 5.5s;
 }
