@@ -23,3 +23,20 @@ section.extensions {
   left: 0;
   width: 300px;
 }
+
+.extensions__content--container {
+  margin: auto;
+  padding-top: 600px;
+  width: 316px;
+
+  display: grid;
+  place-items: center;
+}
+.extensions__content--h1 {
+  text-align: center;
+  color: var(--light);
+}
+.extensions__content--p {
+  text-align: center;
+  color: var(--light);
+}
