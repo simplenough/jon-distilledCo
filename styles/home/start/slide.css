@@ -10,7 +10,7 @@
 section.start {
   position: relative;
 }
-.start .slide {
+section.start figure {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,12 +20,8 @@ section.start {
 
   background-color: #fff;
 }
-.start .slide h1 {
+section.start figure h1 {
   font-size: 128px;
-}
-.start .slide img {
-  width: 300px;
-  height: 450px;
 }
 
 /*
@@ -33,7 +29,7 @@ section.start {
 * Slide Logo 
 ***************************************************
 */
-.start .slide.logo {
+.start__slide--logo {
   z-index: 1300;
 
   display: flex;
@@ -44,7 +40,7 @@ section.start {
   animation-fill-mode: forwards;
   animation-delay: 1.6s;
 }
-.start .slide.logo img {
+.start__slide--logo img {
   width: 150px;
   height: 150px;
 
@@ -57,18 +53,20 @@ section.start {
 * Slide One 
 ***************************************************
 */
-.start .slide.one {
+.start__slide--one {
   z-index: 1200;
   animation: fade 800ms ease;
   animation-fill-mode: forwards;
   animation-delay: 3s;
 }
-.start .slide.one h1 {
+.start__slide--one h1 {
   padding-top: 54px;
   padding-left: 27px;
 }
-.start .slide.one img {
+.start__slide--one img {
   margin-left: 84px;
+  width: 300px;
+  height: 450px;
 }
 
 /*
@@ -76,22 +74,25 @@ section.start {
 * Slide Two 
 ***************************************************
 */
-.start .slide.two {
+.start__slide--two {
   z-index: 1100;
   animation: fade 800ms ease;
   animation-fill-mode: forwards;
   animation-delay: 4.5s;
 }
-.start .slide.two h1 {
+.start__slide--two h1 {
   position: absolute;
   right: 36px;
   top: 15%;
 }
-.start .slide.two img {
+.start__slide--two img {
   position: absolute;
   bottom: 5%;
   right: 0;
   left: 0;
+
+  width: 300px;
+  height: 450px;
   margin: auto;
 
   -webkit-filter: grayscale(100%);
@@ -103,23 +104,26 @@ section.start {
 * Slide Three
 ***************************************************
 */
-.start .slide.three {
+.start__slide--three {
   z-index: 1000;
 
-  animation: slide-up 1300ms ease;
+  animation: slide-up 2s ease;
   animation-fill-mode: forwards;
   animation-delay: 5.5s;
 }
-.start .slide.three h1 {
+.start__slide--three h1 {
   position: absolute;
   right: 36px;
   bottom: 10%;
 }
-.start .slide.three img {
+.start__slide--three img {
   position: absolute;
   top: 5%;
   right: 0;
   left: 0;
+
+  width: 300px;
+  height: 450px;
   margin: auto;
 
   -webkit-filter: grayscale(100%);
@@ -135,6 +139,7 @@ section.start {
   to {
     width: 200px;
     height: 200px;
+    display: none;
   }
 }
 @keyframes slide-up {

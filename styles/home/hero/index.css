@@ -1,5 +1,23 @@
+.hero {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  height: calc(100vh - 71px);
+}
+
 .hero__wrapper {
   margin: 0 14px;
+
+  position: absolute;
+  bottom: -100%;
+
+  animation: move-up 2s ease;
+  animation-fill-mode: forwards;
+  /*
+  ! Wait for slide 3 to finish
+  */
+  animation-delay: 5.5s;
 }
 
 .hero__logo--typeface {
@@ -20,4 +38,16 @@
   width: 316px;
   margin: auto;
   margin-top: 20px;
+}
+
+/*
+***************************************************
+* Animations
+***************************************************
+*/
+@keyframes move-up {
+  to {
+    bottom: 0;
+    position: relative;
+  }
 }
