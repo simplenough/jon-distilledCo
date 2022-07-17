@@ -1,2 +1,16 @@
 @import url("./start/index.css");
 @import url("./hero/index.css");
+@import url("./extentsions/index.css");
+
+body {
+  overflow: hidden;
+
+  animation: unlock-after-animations 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 7s;
+}
+@keyframes unlock-after-animations {
+  to {
+    overflow: auto;
+  }
+}

@@ -1,0 +1,23 @@
+section.extensions {
+  background: var(--dark);
+}
+.extensions__wrapper {
+  position: relative;
+  margin-top: 40px;
+  height: 1315px;
+}
+.extensions__image--one {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  width: 350px;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.extensions__image--two {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 300px;
+}

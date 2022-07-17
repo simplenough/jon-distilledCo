@@ -5,21 +5,19 @@
 
   height: calc(100vh - 71px);
 }
-
 .hero__wrapper {
   margin: 0 14px;
 
   position: absolute;
   top: 100%;
 
-  animation: move-up 2s;
+  animation: move-up 2000ms;
   animation-fill-mode: forwards;
   /*
   ! Wait for slide 3 to start
   */
-  animation-delay: 5.5s;
+  animation-delay: 5500ms;
 }
-
 .hero__logo--typeface {
   display: block;
 
@@ -28,12 +26,10 @@
   margin: auto;
   margin-top: -30px;
 }
-
 .hero__image {
   width: 100%;
   padding: 0;
 }
-
 .hero__content--container {
   width: 316px;
   margin: auto;
