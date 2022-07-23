@@ -12,10 +12,4 @@
   display: none; /* Safari and Chrome */
 }
 
-:root {
-  --dark: #231e1f;
-  --grey: #5e5c5a;
-  --light: #e3e3e3;
-  --beige: #e9e4da;
-  --blue: #86a7b9;
-}
+
