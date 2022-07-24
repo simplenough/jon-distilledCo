@@ -17,3 +17,22 @@ header.mobile {
 .mobile__nav__icon {
   padding: 20px 20px;
 }
+
+/* MD */
+@media (min-width: 768px) {
+  header.mobile {
+    display: none;
+  }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+}
+
+/* Xl */
+@media (min-width: 1280px) {
+}
+
+/* 2XL */
+@media (min-width: 1536px) {
+}
