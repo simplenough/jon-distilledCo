@@ -1,0 +1,30 @@
+@import url("./info/index.css");
+
+body {
+  background-color: var(--beige);
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+}
+
+.header__logo {
+  width: 150px;
+  height: 75px;
+  padding-left: 20px;
+}
+
+.header__nav {
+  float: right;
+  padding: 30px;
+}
+
+.products-image {
+  display: block;
+
+  width: 50%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}

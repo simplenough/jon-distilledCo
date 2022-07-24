@@ -11,35 +11,21 @@
     <title>Distilled Hair Co.</title>
   </head>
   <body>
+    <header class="mobile">
+      <nav class="mobile__nav">
+        <img
+          class="mobile__nav__icon"
+          src="./assets/icons/nav-icon.svg"
+          alt="navigation icon for mobile"
+        />
+      </nav>
+    </header>
     <section class="start">
-      <figure class="start__slide--logo">
-        <img src="assets/start/logo.png" alt="" />
-      </figure>
-      <figure class="start__slide--one">
-        <h1>We</h1>
-        <img src="assets/start/we.jpg" alt="" />
-      </figure>
-      <figure class="start__slide--two">
-        <h1>Do</h1>
-        <img src="assets/start/do.jpg" alt="" />
-      </figure>
-      <figure class="start__slide--three">
-        <h1>Hair</h1>
-        <img src="assets/start/hair.jpg" alt="" />
-      </figure>
+      <article class="slide">
+        <img class="slide__logo" src="assets/start/logo.png" alt="logo" />
+      </article>
     </section>
     <main>
-      <header class="header">
-        <nav class="mobile-nav">
-          <figure class="mobile-nav__icon--container">
-            <img
-              class="mobile-nav__icon"
-              src="./assets/icons/nav-icon.svg"
-              alt="navigation icon for mobile"
-            />
-          </figure>
-        </nav>
-      </header>
       <section class="hero">
         <div class="hero__wrapper">
           <figure>
@@ -57,18 +43,23 @@
             />
           </figure>
 
-          <article class="hero__content--container">
-            <h1 class="hero__content--h1">Luxury</h1>
+          <article class="hero__content">
             <img
-              class="divider"
-              src="./assets/dividers/divider__right--black.svg"
+              class="divider hero__content--divider"
+              src="./assets/dividers/divider__middle--black.svg"
               alt="divider for text"
             />
-            <p>
+            <p class="hero__content--p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ipsa
               nisi djfjd repreh ahdf toelye bilumm
             </p>
-            <a class="btn dark">Consultation</a>
+            <a class="btn dark hero__content--button">Consultation</a>
+          </article>
+          <article class="hero__navigation">
+            <h1>Extensions</h1>
+            <h1>Consultation</h1>
+            <h1>About Us</h1>
+            <h1>Guide</h1>
           </article>
         </div>
       </section>

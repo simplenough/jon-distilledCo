@@ -1,3 +1,4 @@
 .divider {
-  margin: 9px 0;
+  display: block;
+  margin: 9px auto;
 }

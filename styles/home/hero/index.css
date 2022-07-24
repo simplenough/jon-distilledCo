@@ -2,46 +2,138 @@
   position: relative;
   overflow: hidden;
 
-  height: calc(100vh - 71px);
+  height: 100vh;
 }
 .hero__wrapper {
-  margin: 0 14px;
-
   position: absolute;
   top: 100%;
 
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
   animation: move-up 2000ms;
   animation-fill-mode: forwards;
-  /*
-  ! Wait for slide 3 to start
-  */
-  animation-delay: 5500ms;
+  animation-delay: 1800ms; /* ! Wait for start logo to move up */
 }
+
 .hero__logo--typeface {
   display: block;
 
-  width: 250px;
-  height: 154px;
+  width: calc(100vw * 0.7);
+  max-width: 300px;
   margin: auto;
-  margin-top: -30px;
+  padding-bottom: 20px;
 }
 .hero__image {
-  width: 100%;
-  padding: 0;
-}
-.hero__content--container {
-  width: 316px;
+  display: block;
+  width: calc(100vw * 0.9);
+  max-width: 500px;
   margin: auto;
-  margin-top: 20px;
 }
 
-/*
-***************************************************
-* Animations
-***************************************************
-*/
+.hero__content {
+  width: calc(100vw * 0.9);
+  margin: auto;
+  margin-top: 20px;
+
+  display: grid;
+  place-items: center;
+}
+.hero__content--divider {
+  width: 90%;
+  max-width: 425px;
+  margin: auto;
+}
+.hero__content--p {
+  text-align: center;
+  width: 85%;
+  max-width: 400px;
+}
+
 @keyframes move-up {
   to {
     top: 0;
   }
+}
+
+.hero__navigation {
+  display: none;
+}
+
+/*
+***********************************************************
+* SM
+***********************************************************
+*/
+
+@media (min-width: 560px) {
+  .hero__content--p {
+    font-size: 18px;
+  }
+}
+
+/*
+***********************************************************
+* MD
+***********************************************************
+*/
+
+@media (min-width: 768px) {
+  .hero__content {
+    display: none;
+  }
+
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-auto-flow: row;
+    place-content: center;
+  }
+  .hero__logo--typeface {
+    width: 300px;
+    max-width: unset;
+    margin: unset;
+    padding-bottom: 0px;
+  }
+  .hero__image {
+    width: 100%;
+    padding-left: 10px;
+    max-width: unset;
+  }
+  .hero__navigation {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    place-self: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/*
+***********************************************************
+* LG
+***********************************************************
+*/
+@media (min-width: 1024px) {
+}
+
+/*
+***********************************************************
+* XL
+***********************************************************
+*/
+@media (min-width: 1280px) {
+}
+
+/*
+***********************************************************
+* 2XL
+***********************************************************
+*/
+@media (min-width: 1536px) {
 }

@@ -1,0 +1,8 @@
+.info {
+  width: 310px;
+  margin: 10%;
+}
+.info__divider {
+  padding: 10px 0;
+  width: 100%;
+}
