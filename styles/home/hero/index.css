@@ -2,35 +2,34 @@
   position: relative;
   overflow: hidden;
 
-  height: calc(100vh - 71px);
+  height: 100vh;
 }
 .hero__wrapper {
-  margin: 0 14px;
-
   position: absolute;
   top: 100%;
 
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
   animation: move-up 2000ms;
   animation-fill-mode: forwards;
-  /*
-  ! Wait for slide 3 to start
-  */
-  animation-delay: 5500ms;
+  animation-delay: 1800ms; /* ! Wait for start logo to move up */
 }
 .hero__logo--typeface {
   display: block;
 
-  width: 250px;
-  height: 154px;
+  width: calc(100vw * 0.7);
   margin: auto;
-  margin-top: -30px;
+  padding-bottom: 20px;
 }
 .hero__image {
-  width: 100%;
-  padding: 0;
+  width: calc(100vw * 0.9);
 }
 .hero__content--container {
-  width: 316px;
+  width: calc(100vw * 0.9);
   margin: auto;
   margin-top: 20px;
 }

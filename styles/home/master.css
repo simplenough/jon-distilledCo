@@ -2,15 +2,19 @@
 @import url("./hero/index.css");
 @import url("./extentsions/index.css");
 
-body {
+/*
+! Prevent scrolling until the start screen on homepage's animation if complete.
+*/
+main {
+  height: 0;
   overflow: hidden;
-
-  animation: unlock-after-animations 1s;
+  animation: show 1s ease;
   animation-fill-mode: forwards;
-  animation-delay: 7s;
+  animation-delay: 1s;
 }
-@keyframes unlock-after-animations {
+
+@keyframes show {
   to {
-    overflow: auto;
+    height: auto;
   }
 }

@@ -1,7 +1,19 @@
-.mobile-nav__icon--container {
+header.mobile {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+
+  display: flex;
+  justify-content: flex-end;
+
+  z-index: 2000;
+}
+
+.mobile__nav {
   display: flex;
   justify-content: flex-end;
 }
-.mobile-nav__icon {
-  padding: 29px 29px;
+.mobile__nav__icon {
+  padding: 20px 20px;
 }

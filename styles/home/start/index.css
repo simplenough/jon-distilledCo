@@ -1,1 +1,50 @@
-@import url("slide.css");
+section.start {
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1300;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background: #fff;
+
+  animation: slide-up 1.9s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.6s;
+}
+
+.slide__logo {
+  width: 150px;
+  height: 150px;
+
+  animation: grow 1.5s ease;
+  animation-fill-mode: forwards;
+}
+
+/*
+***************************************************
+* Animations
+***************************************************
+*/
+@keyframes grow {
+  to {
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+}
+@keyframes slide-up {
+  to {
+    top: -150vh;
+    display: none;
+  }
+}
