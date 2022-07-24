@@ -1,0 +1,66 @@
+* {
+    background-color: var(--beige);
+}
+
+.header__logo {
+    width: 150px;
+    height: 75px;
+
+    padding-left: 20px;
+}
+
+.header__nav {
+    float: right;
+    padding: 30px;
+}
+
+.products-image {
+    display: block;
+    margin: auto;
+
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    width: 50%;
+}
+
+.faq__title {
+    text-align: center;
+
+    font-family: Branch;
+    font-size: 50px;
+    font-weight: normal;
+
+    padding-bottom: 30px;
+}
+
+.faq__question {
+    font-family: Branch;
+    font-size: 25px;
+    font-weight: normal;
+
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.faq__divider {
+    width: 375px;
+    padding-left: 49px;
+}
+
+.faq__answer {
+    width: 350px;
+    height: 100px;
+
+    font-family: Branch;
+    font-size: 15px;
+    font-weight: normal;
+
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 90px;
+}
+
+.care .faq__title {
+    padding-top: 60px;
+}

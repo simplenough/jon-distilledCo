@@ -4,6 +4,8 @@
   height: 45px;
   margin: 24px 0;
 }
+
+/* Dark Variation */
 .btn.dark {
   position: relative;
   background-image: url("../../assets/backgrounds/black-pattern.jpg");
