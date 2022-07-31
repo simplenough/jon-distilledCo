@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/fonts/font.css" />
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/home/master.css" />
-
+    <link rel="stylesheet" href="./styles/home/home.css" />
+    <link rel="stylesheet" href="./styles/home/guide.css" />
+    <link rel="stylesheet" href="./styles/guide/guide.css">
     <title>Distilled Hair Co.</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
         <img class="slide__logo" src="assets/start/logo.png" alt="logo" />
       </article>
     </section>
-    <main>
+    <main class="home" id="home">
       <section class="hero">
         <div class="hero__wrapper">
           <figure>
@@ -59,11 +60,11 @@
             <h1>Extensions</h1>
             <h1>Consultation</h1>
             <h1>About Us</h1>
-            <h1>Guide</h1>
+            <h1 id="nav__guide">Guide</h1>
           </nav>
         </div>
       </section>
-      <section class="extensions">
+      <!-- <section class="extensions">
         <div class="extensions__wrapper">
           <figure class="extensions__image--container">
             <img
@@ -91,13 +92,149 @@
             <a class="btn dark">Consultation</a>
           </article>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Guide -->
-    <main>Guide</main>
+    <main class="guide" id="guide"><img
+      class="products-image"
+      src="/assets/guide-pic.png"
+      alt="hair products"
+    />
+
+    <section class="faqs">
+      <h1 class="title">FAQs</h1>
+
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+    </section>
+
+    <section class="care">
+      <h1 class="title">Care</h1>
+
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+      <article class="info">
+        <h2 class="info__question">Question one goes here</h2>
+        <img
+          class="info__divider"
+          src="/assets/dividers/divider__right--tan.svg"
+        />
+        <p class="info__answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </article>
+    </section>
+  </main></main>
 
     <!-- About Us -->
     <main>About Us</main>
   </body>
+
+  <script>
+    const homePage = document.getElementById("home");
+    const navGuide = document.getElementById("nav__guide");
+    const guidePage = document.getElementById("guide");
+    navGuide.onclick = () => {
+      homePage.style.transform = "scale(.5)";
+      guidePage.classList.add("move-page-up");
+      guidePage.style.position = "absolute"
+    };
+  </script>
 </html>

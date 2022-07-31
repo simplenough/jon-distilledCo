@@ -5,12 +5,14 @@
 /*
 ! Prevent scrolling until the start screen on homepage's animation if complete.
 */
-main {
+main.home {
   height: 0;
   overflow: hidden;
   animation: show 1s ease;
   animation-fill-mode: forwards;
   animation-delay: 1s;
+
+  transition: transform 2s;
 }
 
 @keyframes show {

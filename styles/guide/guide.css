@@ -1,7 +1,25 @@
 @import url("./info/index.css");
 
-body {
-  background-color: var(--beige);
+main.guide {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-size: 72px;
+
+  position: fixed;
+  bottom: -110vh;
+}
+.move-page-up {
+  animation: move-page-up 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes move-page-up {
+  to {
+    bottom: 0;
+  }
 }
 
 .title {
