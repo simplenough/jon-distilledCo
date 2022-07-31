@@ -87,10 +87,14 @@
   }
 
   .hero__wrapper {
+    left: 0;
+    right: 0;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
-    place-content: center;
+
+    width: 1200px;
+    margin: auto;
   }
   .hero__logo--typeface {
     width: 300px;
@@ -99,9 +103,12 @@
     padding-bottom: 0px;
   }
   .hero__image {
-    width: 100%;
-    padding-left: 10px;
+    width: 800px;
     max-width: unset;
+    margin: unset;
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .hero__navigation {
     grid-column: 2;
@@ -111,9 +118,10 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    margin-top: -200px;
   }
 }
-
 /*
 ***********************************************************
 * LG
