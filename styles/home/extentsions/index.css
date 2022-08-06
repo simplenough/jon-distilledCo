@@ -13,15 +13,17 @@ section.extensions {
   top: -40px;
   right: 0px;
   width: 70vw;
+  max-width: 450px;
 
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 .extensions__image--two {
   position: absolute;
-  top: 300px;
+  top: clamp(250px, 60vw, 400px);
   left: 0;
-  width: 300px;
+  width: 70vw;
+  max-width: 450px;
 }
 
 .extensions__content--container {
@@ -39,4 +41,69 @@ section.extensions {
 .extensions__content--p {
   text-align: center;
   color: var(--light);
+}
+
+/*
+***********************************************************
+* SM
+***********************************************************
+*/
+@media (min-width: 640px) {
+  .extensions__wrapper {
+    margin-top: 40px;
+    height: 1315px;
+  }
+  .extensions__image--one {
+  }
+  .extensions__image--two {
+  }
+
+  .extensions__content--container {
+    margin: auto;
+    padding-top: 600px;
+    width: 316px;
+
+    display: grid;
+    place-items: center;
+  }
+  .extensions__content--h1 {
+    text-align: center;
+    color: var(--light);
+  }
+  .extensions__content--p {
+    text-align: center;
+    color: var(--light);
+  }
+}
+
+/*
+***********************************************************
+* MD
+***********************************************************
+*/
+@media (min-width: 768px) {
+}
+
+/*
+***********************************************************
+* LG
+***********************************************************
+*/
+@media (min-width: 1024px) {
+}
+
+/*
+***********************************************************
+* XL
+***********************************************************
+*/
+@media (min-width: 1280px) {
+}
+
+/*
+***********************************************************
+* 2XL
+***********************************************************
+*/
+@media (min-width: 1536px) {
 }

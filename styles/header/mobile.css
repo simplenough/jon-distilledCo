@@ -20,13 +20,13 @@ header.mobile {
 
 /* MD */
 @media (min-width: 768px) {
-  header.mobile {
-    display: none;
-  }
 }
 
 /* LG */
 @media (min-width: 1024px) {
+  header.mobile {
+    display: none;
+  }
 }
 
 /* Xl */
