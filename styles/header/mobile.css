@@ -1,21 +1,21 @@
 header.mobile {
   position: fixed;
   top: 0;
-
-  width: 100vw;
+  right: 0;
 
   display: flex;
   justify-content: flex-end;
+
+  margin: 20px 20px;
+  padding-top: 2px;
+
+  background-color: white;
+  mix-blend-mode: exclusion;
 
   z-index: 2000;
 }
-
-.mobile__nav {
-  display: flex;
-  justify-content: flex-end;
-}
-.mobile__nav__icon {
-  padding: 20px 20px;
+line {
+  mix-blend-mode: difference;
 }
 
 /* MD */
