@@ -23,7 +23,7 @@
   display: block;
 
   width: calc(100vw * 0.7);
-  max-width: 300px;
+  max-width: 250px;
   margin: auto;
   padding-bottom: 20px;
 }
@@ -70,9 +70,6 @@
 */
 
 @media (min-width: 560px) {
-  .hero__content--p {
-    font-size: 18px;
-  }
 }
 
 /*
